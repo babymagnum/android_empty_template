@@ -11,8 +11,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiHelper {
-    val okHttpClient = OkHttpClient().newBuilder().addInterceptor(getInterceptor()).build()
-    lateinit var apiService: ApiService
+    private val okHttpClient = OkHttpClient().newBuilder().addInterceptor(getInterceptor()).build()
+    private lateinit var apiService: ApiService
 
     init {
         makeService()

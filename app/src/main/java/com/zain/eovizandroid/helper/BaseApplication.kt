@@ -8,7 +8,7 @@ import org.koin.dsl.module
 
 class BaseApplication: Application() {
 
-    val appModule = module {
+    private val appModule = module {
         single { MainViewModel() }
     }
 
