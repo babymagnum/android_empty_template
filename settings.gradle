@@ -1,0 +1,2 @@
+rootProject.name='Eoviz Android'
+include ':app'
